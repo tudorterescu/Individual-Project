@@ -1,0 +1,96 @@
+.ShoptitleA h1 {
+  font-family: 'Times New Roman', serif;
+  font-size: 36px;
+  font-weight: bold;
+  color:black;
+}
+
+.Apparelshop {
+  background-size: cover;
+  padding: 50px;
+  color:white;
+  font-family: 'Arial', sans-serif;
+}
+
+.ShoptitleA {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+
+.Productsapparel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.appproduct {
+  background-image: linear-gradient(to bottom, #7e225b, #7b2ae6);
+  width: calc(30% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.appproduct h2 {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.appproduct p {
+  margin: 5px 0;
+}
+
+.appproduct img {
+  width: 100%; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.product p.price {
+  font-weight: bold;
+}
+
+.Apparelshop h1,
+.product p {
+  opacity: 0.9;
+}
+
+
+
+.appbutton {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.appbutton:hover {
+  background-position: right center;
+ 
+  color: #fff;
+  text-decoration: none;
+}
+
+.appbutton:active {
+  transform: scale(0.95);
+}
