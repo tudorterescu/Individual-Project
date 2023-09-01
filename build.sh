@@ -1,3 +1,4 @@
 # !/bin/bash
-npm run json-server
 npm start
+npm run json-server
+
