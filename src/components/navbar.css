@@ -1,41 +1,50 @@
-
-
 .Navbar {
   background-image: linear-gradient(to bottom, #7e225b, #7b2ae6);
-    padding: 10px 0;
-    border-radius: 10px;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .navbar-container a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin: 0 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .navbar-container a:hover {
-    background-color: white;
-    color: grey;
-  }
-  
-  .navbar-container .phosphor-react {
-    color: white;
-  }
-  
+  padding: 10px 0;
+  border-radius: 10px;
+}
 
-  .Navbar {
-    border-radius: 10px;
-  }
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar-items {
+  display: flex; 
+  justify-content: center; 
+}
+
+.navbar-container a:hover {
+  background-color: white;
+  color: grey;
+}
+
+.navbar-container .phosphor-react {
+  color: white;
+}
+
+.user-info {
+  display: flex; 
+  align-items: center; 
   
+}
+
+.user-info p {
+  color: white;
+  text-align: center;
+  font-family: arial black;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}

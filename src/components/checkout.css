@@ -1,0 +1,77 @@
+/* checkout.css */
+
+.CheckoutContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+    background-image: linear-gradient(to bottom, #7e225b, #7b2ae6);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .CheckoutItems {
+
+    background-image: linear-gradient(to bottom, #7e225b, #7b2ae6);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .CheckoutItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    color:white;
+    background-image: linear-gradient(to bottom, #2a98c4, #2ae653);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color:white;
+  }
+  
+
+  
+  .checkoutButton {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .checkoutButton:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .checkoutButton:active {
+    transform: scale(0.95);
+  }
+  
+  /* Confirmation message styling */
+  .ConfirmationMessage {
+    font-size: 18px;
+    color: green;
+    margin-top: 20px;
+  }
+  

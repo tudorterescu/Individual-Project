@@ -1,9 +1,16 @@
-import React from 'react';
 import "./Cart.css";
+import { Link } from 'react-router-dom';
 
-const Cart = ({ cartItems,updateCart }) => {
+import React from 'react';
+
+
+
+const Cart = ({ cartItems, updateCart }) => {
   console.log('got items in', cartItems);
-  
+
+
+
+
   const handleRemove = (productId) => {
     const updatedCart = cartItems.filter((item) => item.id !== productId);
     updateCart(updatedCart);
@@ -13,12 +20,14 @@ const Cart = ({ cartItems,updateCart }) => {
     return <p>Your cart is empty.</p>;
   }
 
-  
   const totalPrice = cartItems.reduce((total, product) => total + product.price, 0);
 
   return (
     <div className='CartContainer'>
       <h1>Your Cart</h1>
+      <Link to='/checkout'>
+        <button className='checkoutstore'>Checkout</button>
+      </Link>
       <div className='CartItems'>
         {cartItems.map((product) => (
           <div key={product.id} className='CartItem'>
@@ -29,12 +38,13 @@ const Cart = ({ cartItems,updateCart }) => {
           </div>
         ))}
       </div>
+
+
       <div className='CartTotal'>
         <p>Total Price: ${totalPrice.toFixed(2)}</p>
       </div>
     </div>
   );
 };
-
 
 export default Cart;

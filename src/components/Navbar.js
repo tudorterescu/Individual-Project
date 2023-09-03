@@ -1,22 +1,32 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingCart } from 'phosphor-react';
 import "./navbar.css";
 import axios from 'axios';
 
-const curruser = "http://localhost:3001/users";
+const curruser = "/users";
 
 
 export const Navbar = () => {
     const [activeuser, setActiveUser] = useState(null);
+
     
-    useEffect(()=>{
-        axios.get(curruser).then((response)=>{
-            const user = response.data.filter((users)=> users.id === 1);
-            setActiveUser(user)
-        })
-    })
+  useEffect(() => {
+    axios.get(curruser).then((response) => {
+      const user = response.data.find((user) => user.id === 1); //find in order to be able to search via number id
+      setActiveUser(user);
+    });
+  }, []);
+
+  let userContent = null; 
+
+  if (activeuser) {
+    userContent = (
+      <div className='user-info'>
+        <p>Welcome {activeuser.first_name} {activeuser.last_name}</p>
+      </div>
+    );
+  }
 
     return (
         <div>
@@ -29,12 +39,10 @@ export const Navbar = () => {
                     <Link to='/Cart'>
                         <ShoppingCart size={32} />
                     </Link>
+                    {userContent}
                 </div>
-                {activeuser && (
-                    <div className='user-info'>
-                        <p>{activeuser.first_name} {activeuser.last_name}</p>
-                    </div>
-                )}
+
+
             </nav>
 
         </div>

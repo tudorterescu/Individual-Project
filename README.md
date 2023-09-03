@@ -1,9 +1,10 @@
-At the current state a functioning store front is semi-operational, with the apparel, jewellery and home and garden pages done.  Working on the cart page in order to display all the cart information of the user's choice from each of the other pages.
 
-Main Goal - Current
+
+Documentation
 ---------------------
+Each form utilises the Axios fetch method and is implemented via the useEffect method from React. Each requesting different aspects of the current server information. The main way to achieve a categorised storefront was by filtering what the axios method would pull from the server. By using .filter I was able to asign items in the product array according to their category. This way each page does not have overlapping items. From this the main method of navigation is by using Routes via the react-router-dom implementation method. Using Routes allows me to create inbedded links to each page and on top of that allow for quick switching between forms. 
 
-* Express server
+The Cart is built by utilising session storage to maintain the users cart information which is pulled from each form after adding an item to the cart. This method has allowed me to store the user's selection within the browser session so that the user can move through the website without losing their cart information. 
 
 Completed Goals - Current
 ---------------------
